@@ -11,7 +11,7 @@ class Main { //the runner for the calcualtor class!
       //Ask for the tip amout (an integer 0 to 100)
       System.out.print("What's the tip amount: ");
       double tip = Double.parseDouble(sc.nextLine());
-      if(tip < 0 ||  tip > 100){
+      if(tip < 0 && tip > 100){
         System.out.println("That's not a valid number! Please type a number between 0 and 100.");
         tip = Double.parseDouble(sc.nextLine());
       }
